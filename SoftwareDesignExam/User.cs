@@ -8,7 +8,7 @@ namespace SoftwareDesignExam
     {
         public string Name { get; set; }
 
-        public abstract void GetInfo();
+        public abstract void GetInfo();dasdasdasdasd
 
 
     }
