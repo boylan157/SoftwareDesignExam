@@ -4,10 +4,8 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
-    class Buyer : User
+    class Seller : User
     {
-        
-
         public override string GetInfo()
         {
             return Name;

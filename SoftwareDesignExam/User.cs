@@ -6,10 +6,14 @@ namespace SoftwareDesignExam
 {
     abstract class User
     {
-        public string Name { get; set; }
-
-        public abstract void GetInfo();dasdasdasdasd
+        private string _firstName;
+        private string _lastName;
+        private string _emi
+        private int _user_id;
 
 
     }
+
+
+
 }
