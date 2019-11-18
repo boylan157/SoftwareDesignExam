@@ -5,15 +5,13 @@ namespace SoftwareDesignExam
     class Program
     {
 
-        public static void main(String[] args)
+        public static void Main(String[] args)
         {
-            BuyerUserFactory user = new BuyerUserFactory();
-
-            Buyer buyer = null;
-
-
-
-            buyer = user.MakeUser(buyer);
+            // Calls factory
+            StockCarFactory carFactory = new StockCarFactory();
+            StockCar newCar = carFactory.MakeStockCar("pickup");
+            newCar.DisplayStockCar();
+           
 
         }
        

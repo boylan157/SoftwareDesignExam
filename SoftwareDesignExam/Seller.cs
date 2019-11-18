@@ -6,9 +6,9 @@ namespace SoftwareDesignExam
 {
     class Seller : User
     {
-        public override string GetInfo()
+        public Seller()
         {
-            return Name;
+
         }
     }
 }

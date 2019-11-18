@@ -7,10 +7,5 @@ namespace SoftwareDesignExam
     class Buyer : User
     {
         
-
-        public override string GetInfo()
-        {
-            return Name;
-        }
     }
 }
