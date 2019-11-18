@@ -8,7 +8,7 @@ namespace SoftwareDesignExam
     {
         private string _brand;
         private string _model;
-        private string _colorr;
+        private string _color;
         private int _year;
         private long _mileage;
         private double _price;
