@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
-    class Buyer
+    class Buyer : User 
     {
     }
 }
