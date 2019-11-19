@@ -7,7 +7,8 @@ namespace SoftwareDesignExam
     abstract class StockCar : Car
     {   
         // Display method
-        public void DisplayStockCar()
+        override
+        public void DisplayCar()
         {
             Console.WriteLine($" Brand: {Brand}\n Model: {Model}\n Type: {Type}\n Price: {Price}\n Automatic: {IsAutomatic}");
         }

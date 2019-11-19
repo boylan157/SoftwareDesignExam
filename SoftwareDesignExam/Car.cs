@@ -15,8 +15,8 @@ namespace SoftwareDesignExam
         private double _price;
         private bool _isAutomatic;
 
+        public abstract void DisplayCar();
 
-     
         // Properties
         public string Brand 
         {

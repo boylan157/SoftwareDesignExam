@@ -14,7 +14,11 @@ namespace SoftwareDesignExam
         private int _phoneNumber;
 
 
-
+        // Display User method
+        public void DisplayUser()
+        {
+            Console.WriteLine($" Name: {FirstName} {LastName}\n Email: {Email}\n Address: {Address}\n Username: {UserName}\n PhoneNumber: {PhoneNumber}");
+        }
 
         public string FirstName
         {
