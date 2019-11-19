@@ -13,7 +13,9 @@ namespace SoftwareDesignExam
         private int _year;
         private long _mileage;
         private double _price;
-        private Boolean _isAutomatic;
+        private bool _isAutomatic;
+
+
 
         // Constructors
         public Car(string brand, string model, string type, int year, long mileage, double price)
@@ -35,6 +37,8 @@ namespace SoftwareDesignExam
             _mileage = mileage;
             _price = price;
         }
+
+       
 
         // Properties
         public string Brand 
@@ -77,7 +81,7 @@ namespace SoftwareDesignExam
             get { return _type; }
             set { _type = value; }
         }
-        public Boolean IsAutomatic
+        public bool IsAutomatic
         {
             get { return _isAutomatic; }
             set { _isAutomatic = value; }

@@ -12,7 +12,7 @@ namespace SoftwareDesignExam
             Type = "Pickup Truck";
             Model = "Ram";
             Price = 690_000;
-            Automatic = true;
+            IsAutomatic = true;
         }
     }
 }

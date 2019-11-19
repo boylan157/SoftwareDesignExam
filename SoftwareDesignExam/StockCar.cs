@@ -11,9 +11,9 @@ namespace SoftwareDesignExam
         private string _model;
         private string _type;
         private double _price;
-        private Boolean _isAutomatic;
-
-
+        private bool _isAutomatic;
+        
+       
         // Display method
         public void DisplayStockCar()
         {
@@ -22,6 +22,8 @@ namespace SoftwareDesignExam
 
 
        // Properties
+
+            
         public string Brand
         {
             get { return _brand; }
@@ -44,11 +46,12 @@ namespace SoftwareDesignExam
             get { return _price; }
             set { _price = value; }
         }
-        public Boolean IsAutomatic
+        public bool IsAutomatic
         {
             get { return _isAutomatic; }
             set { _isAutomatic = value; }
         }
+        
 
     }
 }

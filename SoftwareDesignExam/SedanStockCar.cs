@@ -12,7 +12,7 @@ namespace SoftwareDesignExam
             Type = "Sedan";
             Model = "A6";
             Price = 645_000;
-            Automatic = true;
+            IsAutomatic = true;
         }
     }
 }

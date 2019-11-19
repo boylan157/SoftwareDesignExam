@@ -12,7 +12,7 @@ namespace SoftwareDesignExam
             Type = "SUV";
             Model = "A-Pace";
             Price = 850_000;
-            Automatic = true ;
+            IsAutomatic = true ;
         }
     }
 }
