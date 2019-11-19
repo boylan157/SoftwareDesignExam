@@ -14,7 +14,7 @@ namespace SoftwareDesignExam
 
             // Creating first Buyer
             User firstBuyer = new Buyer("Daniel", "Boylan", "danboy@email.com", "veien 19", "doylan", 12345678);
-
+            Seller.listcar
 
 
         }

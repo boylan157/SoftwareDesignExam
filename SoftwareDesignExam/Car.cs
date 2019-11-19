@@ -16,30 +16,7 @@ namespace SoftwareDesignExam
         private bool _isAutomatic;
 
 
-
-        // Constructors
-        public Car(string brand, string model, string type, int year, long mileage, double price)
-        {
-            _brand = brand;
-            _model = model;
-            _type = type;
-            _year = year;
-            _mileage = mileage;
-            _price = price; 
-        }
-        public Car(string brand, string model, string type, string color, int year, long mileage, double price)
-        {
-            _brand = brand;
-            _model = model;
-            _type = type;
-            _color = color;
-            _year = year;
-            _mileage = mileage;
-            _price = price;
-        }
-
-       
-
+     
         // Properties
         public string Brand 
         {
