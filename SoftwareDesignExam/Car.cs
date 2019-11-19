@@ -4,29 +4,32 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
-    class Car
+    abstract class Car
     {
         private string _brand;
         private string _model;
         private string _color;
+        private string _type;
         private int _year;
         private long _mileage;
         private double _price;
-        private Boolean _automatic;
+        private Boolean _isAutomatic;
 
         // Constructors
-        public Car(string brand, string model, int year, long mileage, double price)
+        public Car(string brand, string model, string type, int year, long mileage, double price)
         {
             _brand = brand;
             _model = model;
+            _type = type;
             _year = year;
             _mileage = mileage;
             _price = price; 
         }
-        public Car(string brand, string model, string color, int year, long mileage, double price)
+        public Car(string brand, string model, string type, string color, int year, long mileage, double price)
         {
             _brand = brand;
             _model = model;
+            _type = type;
             _color = color;
             _year = year;
             _mileage = mileage;
@@ -69,6 +72,15 @@ namespace SoftwareDesignExam
             get { return _price; }
             set { _price = value; }
         }
-
+        public string Type
+        {
+            get { return _type; }
+            set { _type = value; }
+        }
+        public Boolean IsAutomatic
+        {
+            get { return _isAutomatic; }
+            set { _isAutomatic = value; }
+        }
     }
 }

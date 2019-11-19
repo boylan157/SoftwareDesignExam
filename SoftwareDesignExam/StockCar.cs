@@ -11,13 +11,13 @@ namespace SoftwareDesignExam
         private string _model;
         private string _type;
         private double _price;
-        private Boolean _automatic;
+        private Boolean _isAutomatic;
 
 
         // Display method
         public void DisplayStockCar()
         {
-            Console.WriteLine($" Brand: {Brand}\n Model: {Model}\n Type: {Type}\n Price: {Price}\n Automatic: {Automatic}");
+            Console.WriteLine($" Brand: {Brand}\n Model: {Model}\n Type: {Type}\n Price: {Price}\n Automatic: {IsAutomatic}");
         }
 
 
@@ -44,10 +44,10 @@ namespace SoftwareDesignExam
             get { return _price; }
             set { _price = value; }
         }
-        public Boolean Automatic
+        public Boolean IsAutomatic
         {
-            get { return _automatic; }
-            set { _automatic = value; }
+            get { return _isAutomatic; }
+            set { _isAutomatic = value; }
         }
 
     }
