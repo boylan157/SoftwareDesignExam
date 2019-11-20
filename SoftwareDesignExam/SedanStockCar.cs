@@ -16,6 +16,7 @@ namespace SoftwareDesignExam
             Mileage = 0;
             Price = 645_000;
             IsAutomatic = true;
+            Description = "A Sedan";
         }
     }
 }

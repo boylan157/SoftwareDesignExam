@@ -16,6 +16,7 @@ namespace SoftwareDesignExam
             Mileage = 0;
             Price = 690_000;
             IsAutomatic = true;
+            Description = "a Pickup truck";
         }
     }
 }

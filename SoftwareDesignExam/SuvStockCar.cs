@@ -16,6 +16,8 @@ namespace SoftwareDesignExam
             Price = 850_000;
             Mileage = 5000;
             IsAutomatic = true;
+            Description = "A SUV";
+
         }
     }
 }

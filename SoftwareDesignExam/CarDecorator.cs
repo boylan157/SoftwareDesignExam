@@ -2,15 +2,23 @@
 {
     public abstract class CarDecorator : ICar
     {
+        private readonly ICar _originalCar;
 
-        private readonly ICar_iCar;
-
-        protected CarDecorator(Icar iCar)
+        public CarDecorator(ICar originalCar)
         {
-            _iCar = iCar;
+            _originalCar = originalCar;
         }
 
-        public virtual string Get
+  
 
+        public virtual string GetDescription()
+        {
+            return _originalCar.GetDescription();
+        }
+
+        public virtual double GetPrice()
+        {
+            return _originalCar.GetPrice();
+        }
     }
 }

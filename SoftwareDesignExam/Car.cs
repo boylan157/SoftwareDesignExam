@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
-    abstract class Car
+    public abstract class Car : ICar
     {
         private string _brand;
         private string _model;
@@ -14,11 +14,20 @@ namespace SoftwareDesignExam
         private long _mileage;
         private double _price;
         private bool _isAutomatic;
+        private string _desciption;
+        
 
-        public void DisplayCar()
+     
+        public virtual double GetPrice()
         {
-            Console.WriteLine($" Brand: {Brand}\n Model: {Model}\n Type: {Type}\n Price: {Price}\n Automatic: {IsAutomatic}");
+            return _price;
         }
+
+        public virtual string GetDescription()
+        {
+            return _desciption;
+        }
+
 
         // Properties
         public string Brand 
@@ -65,6 +74,11 @@ namespace SoftwareDesignExam
         {
             get { return _isAutomatic; }
             set { _isAutomatic = value; }
+        }
+        public string Description
+        {
+            get { return _desciption; }
+            set { _desciption = value; }
         }
     }
 }
