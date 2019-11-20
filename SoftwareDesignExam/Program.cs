@@ -43,7 +43,7 @@ namespace SoftwareDesignExam
             foreach (ICar car in RegisteredCars)
             {
                 
-                Console.WriteLine(car.GetDescription() + " " + car.GetPrice());
+                Console.WriteLine(car.GetDescription() + ", Price: " + car.GetPrice());
             }
             
     
