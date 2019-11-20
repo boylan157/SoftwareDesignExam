@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace SoftwareDesignExam
 {
-    class Buyer // : ThreadProxy
+    class Buyer  : ThreadProxy
     {
         Cardealership _cardealership;
         private string _firstName;
@@ -31,21 +31,26 @@ namespace SoftwareDesignExam
             _userName = username;
             _phoneNumber = phonenumber;
         }
-        /*
+        int i = 1;
         protected override void Task()
         {
-            while (!_cardealership.HasCars && _running) ;
-            ICar bought = _cardealership.BuyCar();
-            if (bought != null)
-            {
-                Console.WriteLine($"{_firstName} {_lastName} bought a {bought.GetDescription()}");
-            }
+            
+            while (!_cardealership.HasCars && _running) ;                     
+                ICar bought = _cardealership.BuyCar();
+                if (bought != null)
+                {
+                    Console.WriteLine($"{_firstName} {_lastName} bought car #{i}, {bought.GetDescription()}");                   
+                }
+            i++;
         }
-        */
+
+        
         // Display User method
         public void DisplayUser()
         {
+            
             Console.WriteLine($" Name: {FirstName} {LastName}\n Email: {Email}\n Address: {Address}\n Username: {UserName}\n PhoneNumber: {PhoneNumber}");
+            
         }
 
         public string FirstName

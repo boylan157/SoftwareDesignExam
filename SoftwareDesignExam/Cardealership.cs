@@ -12,7 +12,7 @@ namespace SoftwareDesignExam
 
         private readonly object _lock = new object();
 
-        private bool HasCars { get => _cars.Count > 0; }
+        public bool HasCars { get => _cars.Count > 0; }
 
         public Cardealership()
         {
@@ -23,7 +23,7 @@ namespace SoftwareDesignExam
         protected override void Task()
         {
             Thread.Sleep(rn.Next(50, 400));
-            //MakeCar();
+            MakeCar();
         }
         
         public ICar BuyCar()
@@ -41,14 +41,14 @@ namespace SoftwareDesignExam
                 }
             }
         } 
-        /*
+        
         void MakeCar()
         {
             lock (_lock)
             {
-                _
+                _cars.Add(StockCarFactory.CreateRandomCar());
             }
-        }*/
+        }
     }
 }
 

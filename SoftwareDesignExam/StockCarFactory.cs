@@ -7,7 +7,7 @@ namespace SoftwareDesignExam
     class StockCarFactory
     {
 
-        public ICar CreateRandomCar()
+        public static ICar CreateRandomCar()
         {
             Random random = new Random();
             StockCarFactory carFactory = new StockCarFactory();
@@ -18,7 +18,7 @@ namespace SoftwareDesignExam
         }
             
         
-           public  Car MakeCar(int newStockCar)
+           private  Car MakeCar(int newStockCar)
            {        
                if (newStockCar.Equals(1))
                {
