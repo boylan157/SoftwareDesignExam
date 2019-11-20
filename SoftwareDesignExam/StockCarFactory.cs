@@ -6,7 +6,7 @@ namespace SoftwareDesignExam
 {
     class StockCarFactory
     {
-       public StockCar MakeStockCar(string newStockCar)
+       public Car MakeStockCar(string newStockCar)
         {
            // newStockCar = newStockCar.ToLower(); 
 

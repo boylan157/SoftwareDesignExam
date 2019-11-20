@@ -15,7 +15,10 @@ namespace SoftwareDesignExam
         private double _price;
         private bool _isAutomatic;
 
-        public abstract void DisplayCar();
+        public void DisplayCar()
+        {
+            Console.WriteLine($" Brand: {Brand}\n Model: {Model}\n Type: {Type}\n Price: {Price}\n Automatic: {IsAutomatic}");
+        }
 
         // Properties
         public string Brand 

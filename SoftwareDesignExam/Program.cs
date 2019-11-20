@@ -10,10 +10,8 @@ namespace SoftwareDesignExam
         {
             // Calls factory
             StockCarFactory carFactory = new StockCarFactory();
-            StockCar newCar = carFactory.MakeStockCar("pickup");
+            Car newCar = carFactory.MakeStockCar("pickup");
 
-            // Create first ListCar
-            Car listCar = new ListCar("Bambigini", "900S", "Convertible", "Red", 2016, 19000, 1_000_999, false);
 
             // Creating first Buyers
             User firstBuyer = new Buyer("Daniel", "Boylan", "danboy@email.com", "veien 19", "doylan", 12345678);
@@ -34,7 +32,7 @@ namespace SoftwareDesignExam
             //Registering and listing cars
             List<Car> RegisteredCars = new List<Car>();
             RegisteredCars.Add(newCar);
-            RegisteredCars.Add(listCar);
+            
 
             foreach (Car car in RegisteredCars)
             {

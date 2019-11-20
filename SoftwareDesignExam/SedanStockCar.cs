@@ -4,13 +4,16 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
-    class SedanStockCar : StockCar
+    class SedanStockCar : Car
     {
         public SedanStockCar()
         {
             Brand = "Gaudi";
             Type = "Sedan";
             Model = "A6";
+            Color = "Yellow";
+            Year = 2018;
+            Mileage = 0;
             Price = 645_000;
             IsAutomatic = true;
         }
