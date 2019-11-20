@@ -22,7 +22,7 @@ namespace SoftwareDesignExam
 
         protected override void Task()
         {
-            Thread.Sleep(rn.Next(50, 400));
+            Thread.Sleep(rn.Next(500, 600));
             MakeCar();
         }
         
