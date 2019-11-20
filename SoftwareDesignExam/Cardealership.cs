@@ -23,7 +23,7 @@ namespace SoftwareDesignExam
         protected override void Task()
         {
             Thread.Sleep(rn.Next(50, 400));
-         //   MakeCar();
+            //MakeCar();
         }
         
         public ICar BuyCar()

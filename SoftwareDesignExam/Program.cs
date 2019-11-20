@@ -20,7 +20,12 @@ namespace SoftwareDesignExam
 
             StockCarFactory fac = new StockCarFactory();
 
-            Console.WriteLine(fac.CreateRandomCar().GetDescription());
+            
+
+            ICar car = fac.CreateRandomCar();
+            car = new CruiseControlDecorator(car);
+            Console.WriteLine(car.GetDescription());
+
 
             /*
 
