@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace SoftwareDesignExam
 {
-    class Buyer
+    class Buyer // : ThreadProxy
     {
+        Cardealership _cardealership;
         private string _firstName;
         private string _lastName;
         private string _email;
@@ -13,7 +15,13 @@ namespace SoftwareDesignExam
         private string _userName;
         private int _phoneNumber;
 
-
+        // Constructor
+        public Buyer(string firstname, string lastname,  Cardealership cardealership)
+        {
+            _firstName = firstname;
+            _lastName = lastname;
+            _cardealership = cardealership;
+        }
         public Buyer(string firstname,string lastname, string email, string address, string username, int phonenumber)
         {
             _firstName = firstname;
@@ -23,7 +31,17 @@ namespace SoftwareDesignExam
             _userName = username;
             _phoneNumber = phonenumber;
         }
-
+        /*
+        protected override void Task()
+        {
+            while (!_cardealership.HasCars && _running) ;
+            ICar bought = _cardealership.BuyCar();
+            if (bought != null)
+            {
+                Console.WriteLine($"{_firstName} {_lastName} bought a {bought.GetDescription()}");
+            }
+        }
+        */
         // Display User method
         public void DisplayUser()
         {

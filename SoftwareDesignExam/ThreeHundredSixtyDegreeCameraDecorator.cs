@@ -1,8 +1,8 @@
 ﻿namespace SoftwareDesignExam
 {
-    public class ThreeHundredSixtyDegreeCamera : CarDecorator
+    public class ThreeHundredSixtyDegreeCameraDecorator : CarDecorator
     {
-        public ThreeHundredSixtyDegreeCamera(ICar originalCar)
+        public ThreeHundredSixtyDegreeCameraDecorator(ICar originalCar)
             : base(originalCar)
         {
         }
