@@ -14,18 +14,18 @@ namespace SoftwareDesignExam
 
 
             // Creating first Buyers
-            User firstBuyer = new Buyer("Daniel", "Boylan", "danboy@email.com", "veien 19", "doylan", 12345678);
-            User secondBuyer = new Buyer("Mats", "Meek", "meek@email.com", "gata 116", "mmk", 87654321);
+            Buyer firstBuyer = new Buyer("Daniel", "Boylan", "danboy@email.com", "veien 19", "doylan", 12345678);
+            Buyer secondBuyer = new Buyer("Mats", "Meek", "meek@email.com", "gata 116", "mmk", 87654321);
 
 
             // Restering and listing users
-            List<User> RegisteredUsers = new List<User>();
-            RegisteredUsers.Add(firstBuyer);
-            RegisteredUsers.Add(secondBuyer);
+            List<Buyer> Buyers = new List<Buyer>();
+            Buyers.Add(firstBuyer);
+            Buyers.Add(secondBuyer);
 
-            foreach (User user in RegisteredUsers)
+            foreach (Buyer buyer in Buyers)
             {
-                user.DisplayUser();
+                buyer.DisplayUser();
                 Console.WriteLine();
             }
 

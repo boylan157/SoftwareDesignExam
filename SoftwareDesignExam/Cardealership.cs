@@ -4,17 +4,16 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
-    class Seller : User
+    class Cardealership
     {
-        public Seller(string firstName, string lastName, string email, string address, string username, int phoneNumber)
-            {
-                FirstName = firstName;
-                LastName = lastName;
-                Email = email;
-                Address = address;
-                UserName = username;
-                PhoneNumber = phoneNumber;
-            }
+        private string _companyName;
+
+
+        public string FirstName
+        {
+            get { return _companyName; }
+            set { _companyName = value; }
         }
     }
+}
 
