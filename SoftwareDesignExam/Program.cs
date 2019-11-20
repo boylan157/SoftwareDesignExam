@@ -11,16 +11,12 @@ namespace SoftwareDesignExam
             // Calls factory
             StockCarFactory carFactory = new StockCarFactory();
             ICar newCar = carFactory.MakeCar("pickup");
-            Car myCar = carFactory.MakeCar("sedan");
+            ICar myCar = carFactory.MakeCar("sedan");
 
             newCar = new CruiseControlDecorator(newCar);
+            myCar = new AppleCarPlayDecorator(newCar);
 
 
-
-            Console.WriteLine(newCar.GetPrice());
-            Console.WriteLine("PLZ");
-            
-           
 
             // Creating first Buyers
             Buyer firstBuyer = new Buyer("Daniel", "Boylan", "danboy@email.com", "veien 19", "doylan", 12345678);
