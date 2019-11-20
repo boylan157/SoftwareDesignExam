@@ -14,7 +14,7 @@ namespace SoftwareDesignExam
             ICar myCar = carFactory.MakeCar("sedan");
 
             newCar = new CruiseControlDecorator(newCar);
-            myCar = new AppleCarPlayDecorator(newCar);
+            myCar = new AppleCarPlayDecorator(myCar);
 
 
 
@@ -43,7 +43,7 @@ namespace SoftwareDesignExam
             foreach (ICar car in RegisteredCars)
             {
                 
-                Console.WriteLine(car.GetDescription());
+                Console.WriteLine(car.GetDescription() + " " + car.GetPrice());
             }
             
     
