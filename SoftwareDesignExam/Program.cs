@@ -17,7 +17,7 @@ namespace SoftwareDesignExam
 
 
 
-            Console.WriteLine(newCar.GetDescription());
+            Console.WriteLine(newCar.GetPrice());
             Console.WriteLine("PLZ");
             
            
