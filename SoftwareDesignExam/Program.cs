@@ -14,7 +14,8 @@ namespace SoftwareDesignExam
             ICar myCar = carFactory.MakeCar("sedan");
 
             newCar = new CruiseControlDecorator(newCar);
-            myCar = new AppleCarPlayDecorator(newCar);
+            newCar = new AppleCarPlayDecorator(newCar);
+            myCar = new ThreeHundredSixtyDegreeCamera(myCar);
 
 
 
