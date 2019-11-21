@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
-    class PickupStockCar : Car
+    public class PickupStockCar : Car
     {
         public PickupStockCar()
         {
@@ -13,10 +13,8 @@ namespace SoftwareDesignExam
             Model = "Ram";
             Color = "Black";
             Year = 2015;
-            Mileage = 0;
             Price = 690_000;
             IsAutomatic = true;
-            Description = "a Pickup truck";
         }
     }
 }

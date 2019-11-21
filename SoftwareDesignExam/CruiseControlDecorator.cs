@@ -16,7 +16,7 @@ namespace SoftwareDesignExam
         }
         public override string GetType()
         {
-            return base.GetType() + ", with cruisecontroll";
+            return base.GetType() + ", with cruise control";
         }
 
         public override int GetYear()

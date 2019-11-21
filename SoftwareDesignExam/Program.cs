@@ -4,14 +4,14 @@ using System.Threading;
 
 namespace SoftwareDesignExam
 {
-    class Program
+    public class Program
     {
         public static void Main(String[] args)
         {
-            Cardealership cardealership = new Cardealership();
-            List<Buyer> buyers = new List<Buyer>() { new Buyer("Jeremy", "Clarkson", cardealership), new Buyer("James", "May", cardealership),new Buyer("Richard", "Hammond", cardealership), new Buyer("Tomas", "Sandnes", cardealership) };
+            Cardealership carDealership = new Cardealership();
+            List<Buyer> buyers = new List<Buyer>() { new Buyer("Jeremy", "Clarkson", carDealership), new Buyer("James", "May", carDealership),new Buyer("Richard", "Hammond", carDealership), new Buyer("Tomas", "Sandnes", carDealership) };
 
-            cardealership.Start();
+            carDealership.Start();
 
            
             foreach(var buyer in buyers)
@@ -34,7 +34,7 @@ namespace SoftwareDesignExam
             
             
 
-            cardealership.Stop();
+            carDealership.Stop();
 
         }         
     }    
