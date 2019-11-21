@@ -28,6 +28,30 @@ namespace SoftwareDesignExam
             return _description;
         }
 
+        public virtual string GetBrand()
+        {
+            return _brand;
+        }
+
+        public virtual string GetModel()
+        {
+            return _model;
+        }
+
+        public virtual string GetColor()
+        {
+            return _color;
+        }
+
+        public virtual int GetYear()
+        {
+            return _year;
+        }
+
+        public virtual bool GetAutomatic()
+        {
+            return _isAutomatic;
+        }
 
         // Properties
         public string Brand 

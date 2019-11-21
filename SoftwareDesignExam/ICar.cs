@@ -8,5 +8,14 @@ namespace SoftwareDesignExam
     {
         double GetPrice();
         string GetDescription();
+
+        string GetBrand();
+
+        string GetModel();
+
+        string GetColor();
+
+        int GetYear();
+        bool GetAutomatic();
     }
 }

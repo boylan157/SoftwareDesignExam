@@ -20,5 +20,30 @@
         {
             return _originalCar.GetPrice();
         }
+
+        public virtual string GetBrand()
+        {
+            return _originalCar.GetBrand();
+        }
+
+        public virtual string GetModel()
+        {
+            return _originalCar.GetModel();
+        }
+
+        public virtual string GetColor()
+        {
+            return _originalCar.GetColor();
+        }
+
+        public virtual int GetYear()
+        {
+            return _originalCar.GetYear();
+        }
+
+        public virtual bool GetAutomatic()
+        {
+            return _originalCar.GetAutomatic();
+        }
     }
 }
