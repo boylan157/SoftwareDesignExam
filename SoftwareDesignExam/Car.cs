@@ -14,7 +14,7 @@ namespace SoftwareDesignExam
         private long _mileage;
         private double _price;
         private bool _isAutomatic;
-        private string _desciption;
+        private string _description;
         
 
      
@@ -25,7 +25,7 @@ namespace SoftwareDesignExam
 
         public virtual string GetDescription()
         {
-            return _desciption;
+            return _description;
         }
 
 
@@ -77,8 +77,8 @@ namespace SoftwareDesignExam
         }
         public string Description
         {
-            get { return _desciption; }
-            set { _desciption = value; }
+            get { return _description; }
+            set { _description = value; }
         }
     }
 }
