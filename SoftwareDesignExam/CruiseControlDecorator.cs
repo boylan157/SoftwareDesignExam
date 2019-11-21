@@ -19,6 +19,9 @@ namespace SoftwareDesignExam
             return base.GetDescription() + ", with cruisecontroll";
         }
 
-
+        public override int GetYear()
+        {
+            return 2021;
+        }
     }
 }

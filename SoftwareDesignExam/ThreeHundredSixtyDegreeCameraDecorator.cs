@@ -16,6 +16,9 @@
             return base.GetDescription() + ", with 360 Degree camera and auto parking";
         }
 
-
+        public override string GetColor()
+        {
+            return "Blue";
+        }
     }
 }

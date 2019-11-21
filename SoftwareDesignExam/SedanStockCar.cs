@@ -15,7 +15,7 @@ namespace SoftwareDesignExam
             Year = 2018;
             Mileage = 0;
             Price = 645_000;
-            IsAutomatic = true;
+            IsAutomatic = false;
             Description = "A Sedan";
         }
     }

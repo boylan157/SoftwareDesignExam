@@ -16,6 +16,9 @@
             return base.GetDescription() + ", with AppleCarPlay entertainment system";
         }
 
-
+        public override bool GetAutomatic()
+        {
+            return base.GetAutomatic() == false;
+        }
     }
 }
