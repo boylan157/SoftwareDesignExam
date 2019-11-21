@@ -32,7 +32,7 @@ namespace SoftwareDesignExam
             _phoneNumber = phonenumber;
         }
 
-        private int counter = 1;
+        int _counter = 1;
         protected override void Task()
         {
             
@@ -40,11 +40,11 @@ namespace SoftwareDesignExam
                 ICar bought = _cardealership.BuyCar();
                 if (bought != null)
                 {
-                    Console.WriteLine($"AUTOXO put up car #{counter} for sale , {bought.GetType()} for {bought.GetPrice()} NOK\n");
-                    Console.WriteLine($"\t\t\t\t{_firstName} {_lastName} bought car #{counter} Brand {bought.GetBrand()} | Model {bought.GetModel()} " +
+                    Console.WriteLine($"AUTOXO put up car #{_counter} for sale , {bought.GetType()} for {bought.GetPrice()} NOK\n");
+                    Console.WriteLine($"\t\t\t\t{_firstName} {_lastName} bought car #{_counter} Brand {bought.GetBrand()} | Model {bought.GetModel()} " +
                                       $"| Has automatic = {bought.GetAutomatic()} | Color {bought.GetColor()} | Registered {bought.GetYear()} | {bought.GetType()} for {bought.GetPrice()} NOK\n\n");                   
                 }
-                Interlocked.Increment(ref this.counter);
+                Interlocked.Increment(ref this._counter);
         }
 
         
