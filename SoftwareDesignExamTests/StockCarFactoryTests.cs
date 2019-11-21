@@ -10,8 +10,10 @@ namespace SoftwareDesignExam.Tests
     public class StockCarFactoryTests
     {
       
-        // Two test as requested
+        // Two tests as requested
 
+
+        // testing if we can make a car
         [TestMethod()]
         public void MakeCarTest()
         {
@@ -20,6 +22,7 @@ namespace SoftwareDesignExam.Tests
             Assert.AreEqual("Sedan", car.GetType());
         }
 
+        // testing if we can make a car with decorator
         [TestMethod()]
         public void MakeCarWithDecorator()
         {
