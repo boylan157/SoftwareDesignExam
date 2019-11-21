@@ -9,10 +9,25 @@ namespace SoftwareDesignExam.Tests
     [TestClass()]
     public class StockCarFactoryTests
     {
+      
+        // Two test as requested
+
         [TestMethod()]
-        public void CreateRandomCarTest()
+        public void MakeCarTest()
         {
-            Assert.Fail();
+            StockCarFactory factory = new StockCarFactory();
+            Car car = factory.MakeCar(1);
+            Assert.AreEqual("Sedan", car.GetType());
+        }
+
+        [TestMethod()]
+        public void MakeCarWithDecorator()
+        {
+            StockCarFactory factory = new StockCarFactory();
+            ICar car = factory.MakeCar(2);
+            car = new CruiseControlDecorator(car);
+            Assert.AreEqual("Pickup Truck, with cruisecontroll", car.GetType());
+            Assert.AreEqual(710000, car.GetPrice());
         }
     }
 }
