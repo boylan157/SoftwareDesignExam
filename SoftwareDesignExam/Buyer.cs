@@ -7,7 +7,7 @@ namespace SoftwareDesignExam
 {
     class Buyer  : ThreadProxy
     {
-        Cardealership _cardealership;
+        Cardealership _carDealership;
         private string _firstName;
         private string _lastName;
         private string _email;
@@ -16,11 +16,11 @@ namespace SoftwareDesignExam
         private int _phoneNumber;
 
         // Constructor
-        public Buyer(string firstname, string lastname,  Cardealership cardealership)
+        public Buyer(string firstname, string lastname,  Cardealership carDealership)
         {
             _firstName = firstname;
             _lastName = lastname;
-            _cardealership = cardealership;
+            _carDealership = carDealership;
         }
         public Buyer(string firstname,string lastname, string email, string address, string username, int phonenumber)
         {
@@ -36,8 +36,8 @@ namespace SoftwareDesignExam
         protected override void Task()
         {
             
-            while (!_cardealership.HasCars && running) ;                     
-                ICar bought = _cardealership.BuyCar();
+            while (!_carDealership.HasCars && running) ;                     
+                ICar bought = _carDealership.BuyCar();
                 if (bought != null)
                 {
                     Console.WriteLine($"AUTOXO put up car #{_counter} for sale , {bought.GetType()} for {bought.GetPrice()} NOK\n");

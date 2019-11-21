@@ -7,6 +7,7 @@ namespace SoftwareDesignExam
     public interface ICar
     {
         double GetPrice();
+
         string GetType();
 
         string GetBrand();
@@ -16,6 +17,7 @@ namespace SoftwareDesignExam
         string GetColor();
 
         int GetYear();
+
         bool GetAutomatic();
     }
 }

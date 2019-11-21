@@ -11,10 +11,8 @@ namespace SoftwareDesignExam
         private string _color;
         private string _type;
         private int _year;
-        private long _mileage;
         private double _price;
         private bool _isAutomatic;
-        private string _description;
         
 
      
@@ -78,12 +76,6 @@ namespace SoftwareDesignExam
             set { _year = value; }
         }
 
-        public long Mileage
-        {
-            get { return _mileage; }
-            set { _mileage = value; }
-        }
-
         public double Price
         {
             get { return _price; }
@@ -98,11 +90,6 @@ namespace SoftwareDesignExam
         {
             get { return _isAutomatic; }
             set { _isAutomatic = value; }
-        }
-        public string Description
-        {
-            get { return _description; }
-            set { _description = value; }
         }
     }
 }
