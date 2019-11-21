@@ -23,7 +23,7 @@ namespace SoftwareDesignExam
             }
             
            
-            Thread.Sleep(5000);
+            Thread.Sleep(4000);
 
             foreach (var buyer in buyers)
             {

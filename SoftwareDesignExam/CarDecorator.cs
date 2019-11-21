@@ -4,7 +4,7 @@
     {
         private readonly ICar _originalCar;
 
-        public CarDecorator(ICar originalCar)
+        protected CarDecorator(ICar originalCar)
         {
             _originalCar = originalCar;
         }

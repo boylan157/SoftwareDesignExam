@@ -12,13 +12,30 @@ namespace SoftwareDesignExam
             Random random = new Random();
             StockCarFactory carFactory = new StockCarFactory();
             ICar car = carFactory.MakeCar(random.Next(0, 4));
+
+            Random randomize = new Random();
+            if (randomize.Next(2) == 1)
+            {
+                car = new CruiseControlDecorator(car);
+
+            }
+            else if (randomize.Next(2) == 1)
+            {
+                car = new ThreeHundredSixtyDegreeCameraDecorator(car);
+
+            }
+            else if (randomize.Next(2) == 1)
+            {
+                car = new AppleCarPlayDecorator(car);
+
+            }
+
             return car;
 
-            
         }
-            
-        
-           private  Car MakeCar(int newStockCar)
+
+
+        private Car MakeCar(int newStockCar)
            {        
                if (newStockCar.Equals(1))
                {
@@ -28,14 +45,11 @@ namespace SoftwareDesignExam
                {
                    return new PickupStockCar();
                }
-                else if (newStockCar.Equals(3))
+                else
                 {
                    return new SuvStockCar();
                }
-                else
-               {
-                   return null;
-               }
+
            }         
          
     }
