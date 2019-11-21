@@ -11,9 +11,9 @@
         {
             return base.GetPrice() + 5_000;
         }
-        public override string GetDescription()
+        public override string GetType()
         {
-            return base.GetDescription() + ", with 360 Degree camera and auto parking";
+            return base.GetType() + ", with 360 Degree camera and auto parking";
         }
 
         public override string GetColor()

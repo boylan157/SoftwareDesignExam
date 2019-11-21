@@ -11,9 +11,9 @@
         {
             return base.GetPrice() + 5_000;
         }
-        public override string GetDescription()
+        public override string GetType()
         {
-            return base.GetDescription() + ", with AppleCarPlay entertainment system";
+            return base.GetType() + ", with AppleCarPlay entertainment system";
         }
 
         public override bool GetAutomatic()

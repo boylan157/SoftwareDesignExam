@@ -23,9 +23,9 @@ namespace SoftwareDesignExam
             return _price;
         }
 
-        public virtual string GetDescription()
+        public virtual string GetType()
         {
-            return _description;
+            return _type;
         }
 
         public virtual string GetBrand()

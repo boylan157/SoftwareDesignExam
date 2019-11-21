@@ -14,9 +14,9 @@ namespace SoftwareDesignExam
         {
             return  base.GetPrice() + 20_000;
         }
-        public override string GetDescription()
+        public override string GetType()
         {
-            return base.GetDescription() + ", with cruisecontroll";
+            return base.GetType() + ", with cruisecontroll";
         }
 
         public override int GetYear()

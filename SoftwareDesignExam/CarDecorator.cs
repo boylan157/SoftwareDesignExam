@@ -11,9 +11,9 @@
 
   
 
-        public virtual string GetDescription()
+        public virtual string GetType()
         {
-            return _originalCar.GetDescription();
+            return _originalCar.GetType();
         }
 
         public virtual double GetPrice()
