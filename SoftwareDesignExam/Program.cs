@@ -9,7 +9,7 @@ namespace SoftwareDesignExam
         public static void Main(String[] args)
         {
             Cardealership cardealership = new Cardealership();
-            List<Buyer> buyers = new List<Buyer>() { new Buyer("Daniel", "Boylan", cardealership), new Buyer("Mats", "Meek", cardealership), new Buyer("Tomas", "Sandnes", cardealership) };
+            List<Buyer> buyers = new List<Buyer>() { new Buyer("Jeremy", "Clarkson", cardealership), new Buyer("James", "May", cardealership),new Buyer("Richard", "Hammond", cardealership), new Buyer("Tomas", "Sandnes", cardealership) };
 
             cardealership.Start();
 
