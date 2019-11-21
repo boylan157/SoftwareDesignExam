@@ -40,7 +40,8 @@ namespace SoftwareDesignExam
                 ICar bought = _cardealership.BuyCar();
                 if (bought != null)
                 {
-                    Console.WriteLine($"{_firstName} {_lastName} bought car #{counter}, {bought.GetDescription()}");                   
+                    Console.WriteLine($"AUTOXO put up car for sale #{counter}, {bought.GetDescription()}\n");
+                    Console.WriteLine($"\t\t\t\t{_firstName} {_lastName} bought car #{counter}, {bought.GetDescription()}\n\n");                   
                 }
                 Interlocked.Increment(ref this.counter);
         }
