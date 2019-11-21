@@ -31,7 +31,8 @@ namespace SoftwareDesignExam
             _userName = username;
             _phoneNumber = phonenumber;
         }
-        int i = 1;
+
+        private int counter = 1;
         protected override void Task()
         {
             
@@ -39,9 +40,9 @@ namespace SoftwareDesignExam
                 ICar bought = _cardealership.BuyCar();
                 if (bought != null)
                 {
-                    Console.WriteLine($"{_firstName} {_lastName} bought car #{i}, {bought.GetDescription()}");                   
+                    Console.WriteLine($"{_firstName} {_lastName} bought car #{counter}, {bought.GetDescription()}");                   
                 }
-            i++;
+                Interlocked.Increment(ref this.counter);
         }
 
         
