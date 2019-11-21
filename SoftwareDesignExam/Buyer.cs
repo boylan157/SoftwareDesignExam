@@ -35,7 +35,7 @@ namespace SoftwareDesignExam
         protected override void Task()
         {
             
-            while (!_cardealership.HasCars && _running) ;                     
+            while (!_cardealership.HasCars && running) ;                     
                 ICar bought = _cardealership.BuyCar();
                 if (bought != null)
                 {

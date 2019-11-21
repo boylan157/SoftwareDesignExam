@@ -7,16 +7,16 @@ namespace SoftwareDesignExam
 {
     class Cardealership : ThreadProxy
     {
-        List<ICar> _cars;
+        List<ICar> cars;
         Random rn;
 
         private readonly object _lock = new object();
 
-        public bool HasCars { get => _cars.Count > 0; }
+        public bool HasCars { get => cars.Count > 0; }
 
         public Cardealership()
         {
-            _cars = new List<ICar>();
+            cars = new List<ICar>();
             rn = new Random();
         }
 
@@ -30,10 +30,10 @@ namespace SoftwareDesignExam
         {
             lock (_lock)
             {
-                if(_cars.Count > 0)
+                if(cars.Count > 0)
                 {
-                    ICar carsToSell = _cars[0];
-                    _cars.RemoveAt(0);
+                    ICar carsToSell = cars[0];
+                    cars.RemoveAt(0);
                     return carsToSell;
                 } else
                 {
@@ -46,7 +46,7 @@ namespace SoftwareDesignExam
         {
             lock (_lock)
             {
-                _cars.Add(StockCarFactory.CreateRandomCar());
+                cars.Add(StockCarFactory.CreateRandomCar());
             }
         }
     }
