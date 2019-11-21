@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
-    class StockCarFactory
+    public class StockCarFactory
     {
 
         public static ICar CreateRandomCar()
@@ -35,7 +35,8 @@ namespace SoftwareDesignExam
         }
 
 
-        private Car MakeCar(int newStockCar)
+        // Has to be public for test to work
+        public Car MakeCar(int newStockCar)
            {        
                if (newStockCar.Equals(1))
                {
