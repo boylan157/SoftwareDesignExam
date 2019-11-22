@@ -18,7 +18,7 @@
         {
             return base.GetType() + ", with 360 Degree camera and auto parking";
         }
-
+        //gets base color and overrides it with new color
         public override string GetColor()
         {
             return "Blue";

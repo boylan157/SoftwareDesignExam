@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace SoftwareDesignExam
 {
-    //Class with information about stock Pickupcar
+    //Class with information/properties about stock Pickupcar
     public class PickupStockCar : Car
     {
         public PickupStockCar()

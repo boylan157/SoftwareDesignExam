@@ -6,7 +6,7 @@
     {
         private readonly ICar _originalCar;
 
-        //Initialises cardecorator
+        //Initialises car decorator
         protected CarDecorator(ICar originalCar)
         {
             _originalCar = originalCar;

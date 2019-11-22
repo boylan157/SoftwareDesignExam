@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace SoftwareDesignExam
 {
@@ -52,7 +50,8 @@ namespace SoftwareDesignExam
             return _isAutomatic;
         }
 
-        // Properties
+        /* Properties, decided to have properties to show we know how to do it
+         Check SedanStockCar*/
         public string Brand 
         {
             get { return _brand; }

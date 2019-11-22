@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
 namespace SoftwareDesignExam
@@ -27,7 +26,7 @@ namespace SoftwareDesignExam
         //Chooses how long inbetween threads protected
         protected override void Task()
         {
-            Thread.Sleep(rn.Next(1000));
+            Thread.Sleep(rn.Next(800));
             MakeCar();
         }
         

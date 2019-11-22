@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SoftwareDesignExam
 {
@@ -14,10 +12,12 @@ namespace SoftwareDesignExam
             Random random = new Random();
             StockCarFactory carFactory = new StockCarFactory();
             //initalises carfactory to make random car with numbers 0-3
-            ICar car = carFactory.MakeCar(random.Next(0, 3));
+            ICar car = carFactory.MakeCar(random.Next(0, 4));
 
             /* Makes a randomiser to choose between extra equipment for the cars */
             Random randomize = new Random();
+
+            //Chooses inbetween three equipment based on randomiser
             if (randomize.Next(2) == 1)
             {
                 car = new CruiseControlDecorator(car);
@@ -43,21 +43,19 @@ namespace SoftwareDesignExam
         /* Makes car checking for input from randomiser choosing
          from 1-3 making cars based on the number given*/
         public Car MakeCar(int newStockCar)
-           {        
+        { 
                if (newStockCar.Equals(1))
                {
                    return new SedanStockCar();
-               } 
-                else if (newStockCar.Equals(2))
-               {
+               }
+               if (newStockCar.Equals(2))
+               { 
                    return new PickupStockCar();
-               }
-                else
-                {
-                   return new SuvStockCar();
-               }
+               } 
+               
+               return new SuvStockCar();
+               
 
-           }         
-         
+        }
     }
 }
