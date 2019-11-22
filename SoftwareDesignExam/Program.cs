@@ -32,6 +32,8 @@ namespace SoftwareDesignExam
             //stop cardealership thread
             carDealership.Stop();
 
+
+            //Makes console window stay open when running .exe
             Console.ReadLine();
 
         }         
