@@ -4,6 +4,7 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
+    //Class with information about stock Pickupcar
     public class PickupStockCar : Car
     {
         public PickupStockCar()

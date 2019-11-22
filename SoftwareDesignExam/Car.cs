@@ -4,6 +4,7 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
+    //makes car abstract class
     public abstract class Car : ICar
     {
         private string _brand;
@@ -15,7 +16,7 @@ namespace SoftwareDesignExam
         private bool _isAutomatic;
         
 
-     
+     //makes getters for Car virtual so it can be overrided
         public virtual double GetPrice()
         {
             return _price;

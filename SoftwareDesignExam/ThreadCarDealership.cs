@@ -5,22 +5,23 @@ using System.Threading;
 
 namespace SoftwareDesignExam
 {
-    abstract class ThreadProxy
+    //makes a abstract class Thread
+    abstract class ThreadCarDealership
     {
         protected Thread thread;
         protected bool running;
 
-        public Thread Thread { get => thread; }
-        public bool IsAlive { get => thread.IsAlive; }
-        public bool Running { get => running; }
-
-        public ThreadProxy()
+        //makes ThreadCarDealership start a threadloop
+        protected ThreadCarDealership()
         {
             thread = new Thread(new ThreadStart(ThreadLoop));
             running = false;
         }
 
+        //makes a protected Task
         protected abstract void Task();
+
+        //makes a protected threadloop while task is running
         protected void ThreadLoop()
         {
             while (running)
@@ -28,6 +29,8 @@ namespace SoftwareDesignExam
                 Task();
             }
         }
+
+        //makes a start thread
         public void Start()
         {
             running = true;
@@ -35,6 +38,7 @@ namespace SoftwareDesignExam
             while (!thread.IsAlive) ;
         }
 
+        //makes a stop thread
         public void Stop()
         {
             running = false;

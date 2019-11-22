@@ -1,16 +1,19 @@
 ﻿namespace SoftwareDesignExam
 {
+
+    //Makes a car decorator
     public abstract class CarDecorator : ICar
     {
         private readonly ICar _originalCar;
 
+        //Initialises cardecorator
         protected CarDecorator(ICar originalCar)
         {
             _originalCar = originalCar;
         }
 
   
-
+        //makes getters for car decorator and returns originalcar
         public virtual string GetType()
         {
             return _originalCar.GetType();

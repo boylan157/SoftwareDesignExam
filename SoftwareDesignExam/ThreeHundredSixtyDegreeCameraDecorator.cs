@@ -7,10 +7,13 @@
         {
         }
 
+        //gets price of original car and ovverides it adding more
         public override double GetPrice()
         {
-            return base.GetPrice() + 5_000;
+            return base.GetPrice() + 8_500;
         }
+
+        //gets base type of car and adds new feature
         public override string GetType()
         {
             return base.GetType() + ", with 360 Degree camera and auto parking";

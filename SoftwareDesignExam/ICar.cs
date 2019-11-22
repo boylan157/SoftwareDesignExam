@@ -4,6 +4,7 @@ using System.Text;
 
 namespace SoftwareDesignExam
 {
+    //interface for car
     public interface ICar
     {
         double GetPrice();
