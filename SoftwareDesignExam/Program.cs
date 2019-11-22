@@ -28,12 +28,11 @@ namespace SoftwareDesignExam
             {
                 buyer.Stop();             
             }
-            
-          
-            
-            
+
             //stop cardealership thread
             carDealership.Stop();
+
+            Console.ReadLine();
 
         }         
     }    
