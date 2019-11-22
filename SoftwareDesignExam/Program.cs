@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 using System.Threading;
 
 namespace SoftwareDesignExam
@@ -34,8 +35,9 @@ namespace SoftwareDesignExam
 
 
             //Makes console window stay open when running .exe
+            Console.WriteLine("\n\t\t Press any key to exit program :)");
             Console.ReadLine();
-
+            
         }         
     }    
 }
